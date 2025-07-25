@@ -1,2 +1,6 @@
-# Minecraft-Modpack-Downloader
-Downloads the mods from Minecraft CurseForge modpacks.
+# Minecraft Modpack Downloader
+Minecraft is one of the most widely-modded games in existence. A popular site called CurseForge hosts mods, and modpacks. Modpacks are simply collections of mods, resource packs, shaderpacks, config files, and other modding related gamefiles. However, these modpacks do not contain the actual modfiles themselves. CurseForge wants everyone to install their own third-party Minecraft launcher in order to be able to play the game using these modpacks. Upon examining the modpack zip archives, I found that they contain information needed to download the mods, which the CurseForge launcher must use in order to do it. So I opted to create a Python script to parse the files in question and download all of the files needed to play the game with any given modpack.
+
+This Python script uses the Selenium module, which uses an actual full-fledged web browser controlled by one's Python script. I had to opt for this method as the requests module was unable to download the files from CurseForge's website. Refer to Selenium's online documentation for setting up Selenium. This is the only module whose setup may not be straightforward, at least on Windows.
+
+This script was developed and tested using Python 3.11.2 on Debian 12. I haven't yet tested it on Windows or any other platform, so it may not work without some modifications.
