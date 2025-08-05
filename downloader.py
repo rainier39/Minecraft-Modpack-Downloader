@@ -1,3 +1,4 @@
+# https://github.com/rainier39/Minecraft-Modpack-Downloader
 import json
 from bs4 import BeautifulSoup
 import requests
